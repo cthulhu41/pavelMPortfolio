@@ -301,6 +301,11 @@ main {
     }
     /* конец бургер меню */
     /* приветствие */
+
+    .its-me {
+        font-size: 1em;
+    }
+
     .me-img {
         width: auto;
         height: auto;
