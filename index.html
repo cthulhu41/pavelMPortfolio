@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavel | Web Developer</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./assets/bear_tsn3y61pxr1p.svg">
+    <script defer src="https://kit.fontawesome.com/7aecb8200d.js" crossorigin="anonymous"></script>
+    <script defer src="./app/burger_btn.js"></script>
+    <script defer src="./app/scroll.js"></script>
+</head>
+<body>
+    <!-- Начало меню -->
+    <nav class="header" id="header">
+        <a href="#" class="nav-main-btn"><img src="./assets/bear_tsn3y61pxr1p.svg" alt=""></a>
+        <button class="button" id="burger">
+            <span class="navbar-toggler"></span>
+            <span class="navbar-toggler"></span>
+            <span class="navbar-toggler"></span>
+        </button>
+        <div>
+            <ul class="nav-bar">
+                <li class="nav-item"><a href="#about">Обо мне</a></li>
+                <li class="nav-item"><a href="#skills">Навыки</a></li>
+                <li class="nav-item"><a href="#proj">Проекты</a></li>
+                <li class="nav-item"><a href="#contact">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Конец меню -->
+    <!-- Начало приветсвия -->
+    <section>
+        <div class="its-me-bg">
+            <div class="its-me">
+                <h1>Павел Медведев</h1>
+                <p>Web Developer from Siberia</p>
+            </div>
+        </div>
+    </section>
+    <!-- Конец приветсвия -->
+    <!-- Основной контент -->
+    <main id="about">
+        <!-- Начало текста обо мне -->
+        <div class="text">
+            <span class="me-img"><img src="./assets/img/me.jpg" alt=""></span>
+            <p>Привет, Меня зовут Павел и я начинающий Веб-разработчик из Сибири. Программированием интересуюсь с самого детсва, но раньше это было скорее мое хобби. С недавнего времени решил, что хочу стать высококвалифицированным специалистом, и сейчас прилагаю все усилия для достижения этой цели."</p>
+        </div>
+        <!-- Конец текста обо мне -->
+        <!-- Начало сетки с хобби -->
+        <div class="hobbies">
+            <h3>Что мне нравится?</h3>
+            <div class="hobbies-grid">
+                <div>
+                    <img src="./assets/img/book.png" alt="">
+                    <h5>Книги</h5>
+                </div>
+                <div>
+                    <img src="./assets/img/laptop.png" alt="">
+                    <h5>Код</h5>
+                </div>
+                <div>
+                    <img src="./assets/img/gamepad.png" alt="">
+                    <h5>Игры</h5>
+                </div>
+                <div>
+                    <img src="./assets/img/dumbbell.png" alt="">
+                    <h5>Спорт</h5>
+                </div>
+            </div>
+        </div>
+        <!-- Конец сетки с хобби -->
+    </main>
+    <!-- Конец основного контента -->
+    <!-- Начало мой опыт и стэк -->
+    <section class="exp-container" id="skills">
+        <div class="skills">
+            <h3>Некоторые технологии с которыми я работал</h3>
+            <div class="grid-tech">
+                <span><img src="./assets/img/html-5.png" alt=""></span>
+                <span><img src="./assets/img/css-3.png" alt=""></span>
+                <span><img src="./assets/img/js.png" alt=""></span>
+                <span><img src="./assets/img/python.png" alt=""></span>
+                <span><img src="./assets/img/git.png" alt=""></span>
+                <span><img src="./assets/img/bootstrap.png" alt=""></span>
+                <span><img src="./assets/img/sql-server.png" alt=""></span>
+            </div>
+        </div>
+        <div class="project" id="proj">
+            <h3>Мои проекты</h3>
+            <div class="grid-pets">
+                <!-- https://thrivetalkpavel.netlify.app/ -->
+                <span><a href="https://thrivetalkpavel.netlify.app/" target="_blank"><img src="./assets/img/site-1.PNG" alt=""></a></span>
+                <!-- https://japanesepavel.netlify.app/ -->
+                <span><a href="https://japanesepavel.netlify.app/" target="_blank"><img src="./assets/img/site-2.PNG" alt=""></a></span>
+                <!-- https://cthulhu41.github.io/study-web-1/ -->
+                <span><a href="https://cthulhu41.github.io/study-web-1/ " target="_blank"><img src="./assets/img/site-3.PNG" alt=""></a></span>
+            </div>
+        </div>
+    </section>
+    <!-- Конец мой опыт и стэк -->
+    <!-- Footer -->
+    <footer class="contact" id="contact">
+        <!-- Начало контактов -->
+        <div class="contact-btns">
+            <div class="telegram-btn">
+                <span><a href="https://t.me/rufox4" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="mail-btn">
+                <span><a href="mailto:MedvedevPavel-24@yandex.ru" target="_blank"><i class="fa-solid fa-envelope"></i></a></span>
+            </div>
+        </div>
+        <!-- Конец контактов -->
+        <div class="copy">
+            <p>© Pavel Medvedev 2024</p>
+        </div>
+    </footer>
+    <!-- End footer -->
+</body>
+</html>

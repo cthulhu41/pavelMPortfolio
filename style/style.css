@@ -1,0 +1,381 @@
+@import url(./reset.css);
+
+* {
+    font-family: "ofont.ru_Ebbe";
+}
+
+/* Начало нав бара */
+.header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(45deg, #6B8E4E, #3C5148);
+    transition: .5s;
+}
+
+.header_scroll {
+    transition: .5s;
+    opacity: 0.6;
+}
+
+.button {
+    display: none;
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+
+.navbar-toggler{
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #D5DDDF;
+    left: 5px;
+    transition: transform .5s, opacity .5s;
+}
+
+.button:hover .navbar-toggler{
+    transition: .5s;
+    background-color: #a3aaac;
+}
+
+.navbar-toggler:nth-child(1){
+    transform: translateY(-10px);
+}
+
+.navbar-toggler:nth-child(3){
+    transform: translateY(10px);
+}
+
+.header.open .navbar-toggler:nth-child(2){
+    opacity: 0;
+}
+
+.header.open .navbar-toggler:nth-child(1){
+    transform: translateY(0) rotate(45deg);
+}
+
+.header.open .navbar-toggler:nth-child(3){
+    transform: translateY(0) rotate(-45deg);
+}
+
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    margin: .5em 0 .5em 0;
+}
+
+.nav-item {
+    margin: 2em 4em 2em 2em;
+}
+
+.nav-item a {
+    margin: 0 0 0 10%;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 2em;
+    color: #D5DDDF;
+    transition: .5s;
+}
+
+.nav-item a:hover {
+    color: #a3aaac;
+}
+
+.nav-main-btn img {
+    margin: 2em 1em 2em 1em;
+    width: 4em;
+    height: 4em;
+}
+
+/* Конец нав бара */
+/* Начало приветствия */
+
+.its-me-bg{
+    text-align: center;
+    background-image: url(../assets/img/background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    padding: 30vw 0 30vw 0;
+    color: white;
+}
+
+.its-me {
+    align-items: center;
+    margin: 1vw 8vw 1vw 8vw;
+    width: 80%;
+}
+
+.its-me h1 {
+    font-weight: bold;
+    font-size: 5em;
+}
+
+.its-me p {
+    font-size: 2em;
+}
+
+/* Конец приветсвия */
+/* Начало основного контента */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 5vw 0 10vw 0;
+    padding: 0 10px 0 0;
+    font-size: 2em;
+    background-color: #D5DDDF;
+}
+
+.me-img {
+    width: 60%;
+    height: 100%;
+}
+
+.text p {
+    padding: 0 10vw 0 0;
+    text-align: center;
+    align-content: center;
+}
+
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    background-color: #B2C5B2;
+}
+
+.hobbies h3 {
+    padding: 1em 0 0 0;
+    text-align: center;
+    font-size: 3em;
+}
+
+.hobbies-grid{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin: 10% 10% 5% 10%;
+    font-size: 32px;
+}
+
+.hobbies-grid img {
+    margin: 10%;
+    width: 64px;
+    height: 64px;
+}
+
+/* Конец основного контента */
+/* Начало мой опыт и стэк */
+
+.skills h3 {
+    text-align: center;
+    font-size: 3em;
+    margin: 5vw 0 5vw 0;
+}
+
+.grid-tech {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 3vw 0 3vw;
+    margin: 0 8vw 0 8vw;
+}
+
+.grid-tech img {
+    margin: 5vw;
+    width: 8em;
+    height: auto;
+}
+
+.project {
+    background-color: #D5DDDF;
+}
+
+.project h3{
+    padding: 1em 0 2em 0;
+    font-size: 3em;
+    text-align: center;
+}
+
+.grid-pets {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-bottom: 5vw;
+}
+
+.grid-pets span {
+    height: auto;
+    padding: 1em;
+}
+
+.grid-pets img:hover {
+    max-width: 95%;
+    transition: .5s;
+}
+
+/* Конец мой опыт и стэк */
+/* Начало контакты */
+
+.contact {
+    padding: 2vw 0 0 0;
+}
+
+.contact h3{
+    font-size: 3em;
+    text-align: center;
+}
+
+.contact-btns {
+    display: flex;
+    justify-content: space-around;
+    font-size: 4em;
+}
+
+.telegram-btn a{
+   color: #646464;
+   transition: .5s;
+   padding-right: 5vw;
+}
+
+.telegram-btn a:hover {
+    color: #45c3da;
+    font-size: 130%;
+}
+
+
+.mail-btn a{
+    color: #646464;
+    transition: .5s;
+    padding-left: 5vw;
+}
+
+.mail-btn a:hover {
+    color: #272727;
+    font-size: 130%;
+}
+
+.copy {
+    text-align: center;
+    font-size: 2em;
+}
+
+/* Конец контакты */
+/* начало мобильный медиа запрос */
+
+@media (max-width: 992px){
+    /* бургер меню */
+    .button {
+        display: block;
+        z-index: 2;
+        padding: 1em;
+    }
+    .nav-bar {
+        width: 100%;
+        margin: 0;
+        display: block;
+        position: absolute;
+        left: -100%;
+        top: 0;
+        background: linear-gradient(45deg, #6B8E4E, #3C5148);
+        padding: 80px 20px 20px 20px;
+        transition: transform .5s;
+    }
+    
+    .nav-main-btn {
+        display: none;
+    }
+
+    .header.open .nav-bar{
+    transform: translateX(100%);
+    }
+    /* конец бургер меню */
+    /* приветствие */
+    .text {
+        justify-items: center;
+        grid-template-columns: 100%;
+        gap: 1.5em;
+        align-content: center;
+    }
+
+    .text p {
+        padding: 0 1em 1em 1em;
+        font-size: .8em;
+    }
+    /* конец приветствия */
+    /* начало хобби */
+    .hobbies h3{
+        font-size: 2em;
+    }
+
+    .hobbies-grid img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .hobbies-grid h5{
+        font-size: .6em;
+    }
+    /* конец хобби */
+    /* start exp */
+    .skills h3 {
+        font-size: 1.8em;
+    }
+
+    .grid-tech img{
+        width: 4em;
+    }
+
+    .project h3{
+        font-size: 1.8em;
+    }
+
+    /* end exp */
+    /* Начало контакты */
+
+    .contact h3{
+        font-size: 1.8em;
+    }
+
+    .contact-btns {
+        font-size: 2em;
+    }
+
+    .telegram-btn a:hover {
+        border-radius: 30px;
+    }
+    
+    .mail-btn a:hover {
+        border-radius:30px;
+    }
+    
+    .copy {
+        font-size: 1em;
+    }
+
+    /* Конец контакты */
+
+}
+
+/* конец медиа запроса */
+/* Подключение шрифта */
+
+@font-face {
+    /* название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)  */
+    font-family: "ofont.ru_Ebbe"; 
+    /*  адрес шрифта и тип  */
+    src: url("../assets/fonts/ofont.ru_Ebbe.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
