@@ -12,6 +12,7 @@
     justify-content: space-between;
     background: linear-gradient(45deg, #6B8E4E, #3C5148);
     transition: .5s;
+    z-index: 2;
 }
 
 .header_scroll {
@@ -88,6 +89,11 @@
     margin: 2em 1em 2em 1em;
     width: 4em;
     height: 4em;
+}
+
+.nav-main-btn img:hover {
+    transform: scale(1.1);
+    transition: .5s;
 }
 
 /* Конец нав бара */
@@ -220,7 +226,7 @@ main {
 }
 
 .grid-pets img:hover {
-    max-width: 95%;
+    transform: scale(0.9);
     transition: .5s;
 }
 
@@ -238,36 +244,27 @@ main {
 
 .contact-btns {
     display: flex;
-    justify-content: space-around;
     font-size: 4em;
+    justify-content: space-evenly
 }
 
 .telegram-btn a{
    color: #646464;
    transition: .5s;
-   padding-right: 5vw;
 }
 
 .telegram-btn a:hover {
     color: #45c3da;
-    font-size: 130%;
 }
 
 
 .mail-btn a{
     color: #646464;
     transition: .5s;
-    padding-left: 5vw;
 }
 
 .mail-btn a:hover {
     color: #272727;
-    font-size: 130%;
-}
-
-.copy {
-    text-align: center;
-    font-size: 2em;
 }
 
 /* Конец контакты */
@@ -366,12 +363,12 @@ main {
         font-size: 2em;
     }
 
-    .telegram-btn a:hover {
-        border-radius: 30px;
+    .telegram-btn a {
+        color: #45c3da;
     }
-    
-    .mail-btn a:hover {
-        border-radius:30px;
+
+    .mail-btn a {
+        color: #272727;
     }
 
     /* Конец контакты */
